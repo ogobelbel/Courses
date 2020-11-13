@@ -1,4 +1,4 @@
-'use srtict'
+'use srtict';
 let money = +prompt("Ваш бюджет на месяц?", "");
 let time = prompt("Введите дату в формате ГГГГ ММ ДД", "");
 
@@ -34,7 +34,7 @@ let appData = {
 // }
 
 
- var i = 0;
+ let i = 0;
 // while (i < 2 ) {
     
 //     let answer1 = prompt("Есть доп расходы?");
