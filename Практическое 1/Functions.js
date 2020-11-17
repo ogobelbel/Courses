@@ -1,49 +1,35 @@
-// let num = 10;
+function calcMin(a, b) {
 
-// function showFirstMessage(text){
-//     alert(text);
-//      num = 20;
-// }
+    {
+        let i;
+    function ifNubmber(e) {
+        if (isNaN(e)) {
+            alert("Для ввода допустимы только числа!");
+        }
+    }
 
-// showFirstMessage("hellowirlld");
+    for ( i = 0; i < 1; i++) {
 
-// console.log(num);
+        a = prompt("Какое число возвести в степень?", "");
 
-
-let calc = (a,b) => a+b;
-console.log(calc(3,5));
-
-
-
-
-function retVar(){
-    let num = 50;
-    return num;
+        if (!isNaN(a)) {
+            b = prompt("В какую степень возводим");
+            if (!isNaN(b)) {
+                let c = a ** b;
+                return alert('Результат ${a}');
+            } else {
+                ifNubmber(b);
+                i--;
+            }
+        } else {
+           ifNubmber(a, i);
+           i--;
+        }
+    }
 }
-let anotherNum = retVar();
-console.log(anotherNum);
-
-let str = "test";
-console.log(str.length);
-
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
-
-
-let twelve ="12.2px";
-console.log(parseInt(twelve));
-console.log(parseFloat(twelve));
-
-function createCounter() {
- let counter = 0;
-const myFunction = function() {
-counter = counter + 1;
-return counter;
 }
-return myFunction;
-}
-const increment = createCounter();
-const c1 = increment();
-const c2 = increment();
- const c3 = increment();
- console.log('example increment', c1, c2, c3);
+
+
+
+
+console.log(calcMin(3, 2));
